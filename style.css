@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+}
+main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.card {
+  width: 540px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+}
+.card-img .desktop-img img {
+  width: 270px;
+  height: auto;
+  border-radius: 12px 0px 0px 12px;
+}
+.card-img .mobile-img {
+  display: none;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 10px;
+}
+.info-span {
+  color: hsl(228, 12%, 48%);
+  font-size: 11px;
+  letter-spacing: 5px;
+  padding-bottom: 13px;
+}
+.info-h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 18px;
+  color: hsl(212, 21%, 14%);
+  line-height: 1;
+}
+.info-p {
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  line-height: 1.8;
+  padding-bottom: 18px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  padding-bottom: 26px;
+}
+.active-price {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+.disable-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  margin-left: 15px;
+  text-decoration: line-through;
+}
+
+.info-btn {
+  background-color: hsl(158, 36%, 37%);
+  text-align: center;
+  padding: 13px 20px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.info-btn:hover {
+  background-color: hsl(159, 37%, 24%);
+}
+.info-btn:active {
+  background-color: hsl(159, 38%, 18%);
+}
+.info-btn img {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px 20px 15px;
+  }
+  .card-img .desktop-img {
+    display: none;
+  }
+  .card-img .mobile-img {
+    display: block;
+    object-fit: contain;
+  }
+  .card-img .mobile-img img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0px 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  
+}
